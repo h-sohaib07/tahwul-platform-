@@ -1,0 +1,54 @@
+.leader-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: var(--spacing-md);
+  border-radius: 10px;
+  background-color: #F5F8FA;
+  width: 225px;
+  min-width: 225px;
+  box-sizing: border-box;
+}
+
+.leader-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.leader-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leader-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.leader-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: #1D3557;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leader-role {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+.leader-score {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
